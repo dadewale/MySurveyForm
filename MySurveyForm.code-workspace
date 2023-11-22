@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/Web Designs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MySurveyForm"
+	}
+}
