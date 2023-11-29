@@ -4,141 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Technology and Tools</title>
+    <link rel="stylesheet" href="MySurveyForm.css">
+    <link rel="icon" type="image/x-icon"
 </head>
 
 <body>
-    <h1 id="title">Technology and Tools</h1>
-    <p id="description">Welcome to 'Technology and Tools,' your go-to destination for understanding the dynamic
-        landscape of modern technology! Our survey website is designed to delve into the diverse realms of gadgets,
-        software, connectivity, and user preferences to paint a comprehensive picture of the ever-evolving tech
-        landscape. By participating in our surveys, you contribute to a collective exploration of preferred devices,
-        software trends, online security practices, and the future expectations of technology. From smartphones to smart
-        home devices, we aim to uncover the intricacies of your tech habits and frustrations. Your insights will not
-        only shape the future content and features of our platform but will also empower tech enthusiasts, industry
-        professionals, and curious minds alike with a deeper understanding of the digital world. Join us on this
-        exciting journey of discovery and let your voice shape the future of technology!</p>
-    <form id="form" action="submit">
-        <div class="input-element">
-            <label id="name-label">
-                Name
-            </label>
-            <input placeholder="name" id="name" type="text" required>
-        </div>
-        <div class="input-element">
-            <label id="email-label">
-                Email
-            </label>
-            <input placeholder="email" id="email" type="email" required>
-        </div>
-        </div>
-        <div class="input-element">
-            <label id="number-label">
-                Age
-            </label>
-            <input placeholder="age" id="age" type="number" min="5" max="100" required>
-        </div>
-        <div class="input-element">
-            <label id="select-label">
-                What is your primary device for accessing the internet and online content?
-            </label>
-            <select>
-                <option value="">Smartphone</option>
-                <option value="">Tablet</option>
-                <option value="">Laptop</option>
-                <option value="">Desktop Computer</option>
-                <option value="">Others</option>
-            </select>
-            <div>
-                <label id="select-label">
-                    Which operating system do you prefer for your primary device?
+    <header class="header">
+    <div class="container">
+        <h1 id="title" class="text-center">Technology and Tools</h1><br>
+        <p id="description" class="description text-center">Welcome to Technology and Tools, your go-to destination for understanding the dynamic
+            landscape of modern technology! Our survey website is designed to delve into the diverse realms of gadgets,
+            software, connectivity, and user preferences to paint a comprehensive picture of the ever-evolving tech
+            landscape. By participating in our surveys, you contribute to a collective exploration of preferred devices,
+            software trends, online security practices, and the future expectations of technology. From smartphones to smart
+            home devices, we aim to uncover the intricacies of your tech habits and frustrations. Your insights will not
+            only shape the future content and features of our platform but will also empower tech enthusiasts, industry
+            professionals, and curious minds alike with a deeper understanding of the digital world. Join us on this
+            exciting journey of discovery and let your voice shape the future of technology!</p><br><br>
+            </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">
+                    Name
                 </label>
-                <select id="dropdown">
-                    <option value="">iOS</option>
-                    <option value="">Android</option>
-                    <option value="">Windows</option>
-                    <option value="">macOS</option>
-                    <option value="">Others</option>
-                </select>
-                <div>
-                    <label>How often do you upgrade your primary device?</label>
-                    <label><input type="radio" name="upgrade">Every year</label>
-                    <label><input type="radio" name="upgrade">Every two years</label>
-                    <label><input type="radio" name="upgrade">Every three years</label>
-                    <label><input type="radio" name="upgrade">Longer than three years</label>
-                    <label><input type="radio" name="upgrade">I don't upgrade my devices</label>
-                    <div>
-                        <label>In which scenarios do you primarily use your devices?(Select all that apply)</label>
-                        <label><input type="checkbox" name="scenarios">Work</label>
-                        <label><input type="checkbox" name="scenarios">Entertainment</label>
-                        <label><input type="checkbox" name="scenarios">Communication</label>
-                        <label><input type="checkbox" name="scenarios">Research/Browsing</label>
-                        <label><input type="checkbox" name="scenarios">Gaming</label>
-                        <div>
-                            <label for="applications">Which applications do you use most frequently on your primary
-                                device? (List up to 5)
-                                <textarea name="applications" id="applications" cols="30" rows="10"></textarea>
-                            </label>
-                            <div>
-                                <label>What is your preferred web browser for accessing online content?</label>
-                                <label><input type="radio" name="upgrade">Chrome</label>
-                                <label><input type="radio" name="upgrade">Firefox</label>
-                                <label><input type="radio" name="upgrade">Safari</label>
-                                <label><input type="radio" name="upgrade">Edge</label>
-                                <label><input type="radio" name="upgrade">Others</label>
-                                <div>
-                                    <label>What are your preferred communication apps for staying in touch with others?
-                                        (Select all that apply)</label>
-                                    <label><input type="checkbox" name="communication">Whatsapp</label>
-                                    <label><input type="checkbox" name="communication">Telegram</label>
-                                    <label><input type="checkbox" name="communication">Facebook</label>
-                                    <label><input type="checkbox" name="communication">Zoom</label>
-                                    <label><input type="checkbox" name="communication">Skype</label>
-                                    <label><input type="checkbox" name="communication">Others</label>
-                                    <div>
-                                        <label>How open are you to trying out new software or applications?</label>
-                                        <label><input type="radio" name="software">Very open - I enjoy exploring and
-                                            adopting new tools.</label>
-                                        <label><input type="radio" name="software">Somewhat open - I consider new tools
-                                            but prefer proven ones.</label>
-                                        <label><input type="radio" name="software">Not very open - I stick to what I'm
-                                            familiar with.</label>
-                                        <label><input type="radio" name="software">Not open at all - I prefer
-                                            established
-                                            and widely used tools.</label>
-                                        <div>
-                                            <label> How quickly do you usually adopt new technologies or
-                                                gadgets?</label>
-                                            <label><input type="radio" name="technologies">Early adopter - I like trying
-                                                out
-                                                new tech as soon as it's available.</label>
-                                            <label><input type="radio" name="technologies">Moderately early - I adopt
-                                                tech after it's been on the market for a while.</label>
-                                            <label><input type="radio" name="technologies"> Late adopter - I wait until
-                                                a technology is well-established before trying it.</label>
-                                            <label><input type="radio" name="technologies"> I rarely adopt new
-                                                technologies.</label>
-                                            <div>
-                                                <label> How would you describe your current practices for online
-                                                    security?</label>
-                                                <label><input type="radio" name="security">I use a password manager and
-                                                    enable two-factor authentication.</label>
-                                                <label><input type="radio" name="security">I use strong passwords but
-                                                    haven't implemented two-factor authentication.</label>
-                                                <label><input type="radio" name="security"> I use the same password
-                                                    across multiple accounts.</label>
-                                                <label><input type="radio" name="security"> I don't take specific
-                                                    measures for online security.</label>
-                                                <div>
-                                                    <label for="internet">Who is your current internet service provider?
-                                                        <textarea name="internet" id="internet" cols="8"
-                                                            rows="2"></textarea>
-                                                    </label>
-                                                    <div>
-                                                        <label for="internet speed">On a scale of 1 to 5, how satisfied are you with your internet connection speed?
-                                                            <textarea name="internet speed" id="internet speed" cols="8"
-                                                                rows="2"></textarea>
-                                                        </label>
+                <input id="name" type="text" class="form-input" placeholder="Enter your name" required>
+            </div><br>
+            <div class="form-group">
+                <label id="email-label" for="email">
+                    Email
+                </label>
+                <input id="email" type="email" class="form-input" placeholder="Enter your email" required>
+            </div><br>
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    Age
+                </label>
+                <input id="number" type="number" class="form-input" min="5" max="100" placeholder="Age" required>
+            </div><br>
+            <div class="form-group">
+                <p>
+                    What is your primary device for accessing the internet and online content?
+                </p>
+                <select id="dropdown" name="content" class="form-control">
+                    <option disabled selected>Choose your primary device</option>
+                    <option value="Smartphone">Smartphone</option>
+                    <option value="Tablet">Tablet</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Desktop">Desktop Computer</option>
+                    <option value="Others">Others</option>
+                </select><br>
+                <div class="form-group">
+                    <p>
+                        Which operating system do you prefer for your primary device?
+                    </p>
+                    <select id="dropdown" name="device" class="form-control">
+                        <option disabled selected>Choose operating system</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Android">Android</option>
+                        <option value="Windows">Windows</option>
+                        <option value="macOS">macOS</option>
+                        <option value="Others">Others</option>
+                    </select><br>
+                    <div class="form-group">
+                        <p>How often do you upgrade your primary device?</p>
+                        <label><input type="radio" name="upgrade" value="upgrade">Every year</label>
+                        <label><input type="radio" name="upgrade" value="upgrade">Every two years</label>
+                        <label><input type="radio" name="upgrade" value="upgrade">Every three years</label>
+                        <label><input type="radio" name="upgrade" value="upgrade">Longer than three years</label>
+                        <label><input type="radio" name="upgrade" value="upgrade">I don't upgrade my devices</label><br>
+                        <div class="form-group">
+                            <p>In which scenarios do you primarily use your devices?(Select all that
+                                apply)</p>
+                            <label><input type="checkbox" name="scenarios" value="scenarios">Work</label>
+                            <label><input type="checkbox" name="scenarios" value="scenarios">Entertainment</label>
+                            <label><input type="checkbox" name="scenarios" value="scenarios">Communication</label>
+                            <label><input type="checkbox" name="scenarios" value="scenarios">Research/Browsing</label>
+                            <label><input type="checkbox" name="scenarios" value="scenarios">Gaming</label><br>
+                            <div class="form-group">
+                                <p>Which applications do you use most frequently on your primary
+                                    device? (List up to 5)</p>
+                                    <textarea name="applications" id="applications" cols="30" rows="10"></textarea><br>
+                                <div class="form-group">
+                                    <p>What is your preferred web browser for accessing online content?</p>
+                                    <label><input type="radio" name="access" value="access">Chrome</label>
+                                    <label><input type="radio" name="access" value="access">Firefox</label>
+                                    <label><input type="radio" name="access" value="access">Safari</label>
+                                    <label><input type="radio" name="access" value="access">Edge</label>
+                                    <label><input type="radio" name="access" value="access">Others</label><br>
+                                    <div class="form-group">
+                                        <p>What are your preferred communication apps for staying in touch with others?
+                                            (Select all that apply)</p>
+                                        <label><input type="checkbox" name="communication" value="communication">Whatsapp</label>
+                                        <label><input type="checkbox" name="communication" value="communication">Telegram</label>
+                                        <label><input type="checkbox" name="communication" value="communication">Facebook</label>
+                                        <label><input type="checkbox" name="communication" value="communication">Zoom</label>
+                                        <label><input type="checkbox" name="communication" value="communication">Skype</label>
+                                        <label><input type="checkbox" name="communication" value="communication">Others</label><br>
+                                        <div class="form-group">
+                                            <p>How open are you to trying out new software or applications?</p>
+                                            <label><input type="radio" name="software" value="software">Very open - I enjoy exploring and
+                                                adopting new tools.</label>
+                                            <label><input type="radio" name="software" value="software">Somewhat open - I consider new tools
+                                                but prefer proven ones.</label>
+                                            <label><input type="radio" name="software" value="software">Not very open - I stick to what I'm
+                                                familiar with.</label>
+                                            <label><input type="radio" name="software" value="software">Not open at all - I prefer
+                                                established
+                                                and widely used tools.</label><br>
+                                            <div class="form-group">
+                                                <p> How quickly do you usually adopt new technologies or
+                                                    gadgets?</p>
+                                                <label><input type="radio" name="technologies" value="technologies">Early adopter - I like trying
+                                                    out
+                                                    new tech as soon as it's available.</label>
+                                                <label><input type="radio" name="technologies" value="technologies">Moderately early - I adopt
+                                                    tech after it's been on the market for a while.</label>
+                                                <label><input type="radio" name="technologies" value="technologies"> Late adopter - I wait until
+                                                    a technology is well-established before trying it.</label>
+                                                <label><input type="radio" name="technologies" value="technologies"> I rarely adopt new
+                                                    technologies.</label><br>
+                                                <div class="form-group">
+                                                    <p> How would you describe your current practices for online
+                                                        security?</p>
+                                                    <label><input type="radio" name="security" value="security">I use a password manager and
+                                                        enable two-factor authentication.</label>
+                                                    <label><input type="radio" name="security" value="security">I use strong passwords but
+                                                        haven't implemented two-factor authentication.</label>
+                                                    <label><input type="radio" name="security" value="security"> I use the same password
+                                                        across multiple accounts.</label>
+                                                    <label><input type="radio" name="security" value="security"> I don't take specific
+                                                        measures for online security.</label><br>
+                                                    <div class="form-group">
+                                                        <p>Who is your current internet service provider?</p>
+                                                            <textarea name="internet" id="internet" cols="8"
+                                                                rows="2"></textarea><br>
+                                                        <div class="form-group">
+                                                            <p>On a scale of 1 to 5, how satisfied
+                                                                are you with your internet connection speed?</p>
+                                                                <textarea name="internet speed" id="internet speed" cols="8"
+                                                                    rows="2"></textarea><br>
+                                                            <div class="form-group">
+                                                                <p>What upcoming technological advancements are you most
+                                                                    excited about? Please select all that apply.</p>
+                                                                <label><input type="radio" name="advancements" value="advancements">Artificial
+                                                                    Intelligence</label>
+                                                                <label><input type="radio" name="advancements" value="advancements">Virtual
+                                                                    Reality</label>
+                                                                <label><input type="radio" name="advancements" value="advancements">5G
+                                                                    Technology</label>
+                                                                <label><input type="radio"
+                                                                        name="advancements" value="advancements">Blockchain</label>
+                                                                <label><input type="radio"
+                                                                        name="advancements" value="advancements">Others</label><br>
+                                                                <div class="form-group">
+                                                                    <p>Are there specific areas of technology you would
+                                                                        like to learn more about? Please select all that
+                                                                        apply.</p>
+                                                                    <label><input type="radio" name="areas" value="areas">Coding and
+                                                                        programming</label>
+                                                                    <label><input type="radio"
+                                                                            name="areas" value="areas">Cybersecurity</label>
+                                                                    <label><input type="radio" name="areas" value="areas">Data
+                                                                        Analytics</label>
+                                                                    <label><input type="radio"
+                                                                            name="areas" value="areas">Blockchain</label>
+                                                                    <label><input type="radio" name="areas" value="areas">Others</label><br>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <p>Would you be interested in educational content,
+                                                                        such as tutorials or guides, to enhance your tech
+                                                                        skills?</p>
+                                                                    <label><input type="radio" name="content" value="content">Yes</label>
+                                                                    <label><input type="radio" name="content" value="content">No</label>
+                                                                    <label><input type="radio" name="content" value="content">Maybe</label><br>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <p>Have you experienced any technical challenges or
+                                                                        frustrations while using our website or services?
+                                                                        Please select all that apply.</p>
+                                                                    <label><input type="radio" name="challenges" value="challenges">Slow
+                                                                        website loading times</label>
+                                                                    <label><input type="radio" name="challenges" value="challenges">Difficulty
+                                                                        navigating the website</label>
+                                                                    <label><input type="radio"
+                                                                            name="challenges" value="challenges">Compatibility issues with
+                                                                        devices</label><br>
+                                                                    <div class="form-group">
+                                                                        <p>Additional Comments</p>
+                                                                            <textarea name="internet" id="internet"
+                                                                                cols="30" rows="10"></textarea>
+                                                                        <div class="form-group">
+                                                                            <button type="submit" id="submit"
+                                                                                class="submit-button">
+                                                                                Submit
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -150,8 +215,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
-</body>
-
-</html>
+        </form>
+    </body>
+    
